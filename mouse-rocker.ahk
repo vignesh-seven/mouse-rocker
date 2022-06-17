@@ -6,7 +6,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 browsers := ["ahk_exe firefox.exe", "ahk_exe msedge.exe", "ahk_exe chrome.exe"]
 
 ;  BACK
-RButton & ~LButton::
+~RButton & LButton::
   ; check for browsers
   For i, bro in browsers {
     If(WinActive(bro)) {
@@ -35,7 +35,7 @@ Return
 
 
 ; TASK VIEW
-RButton & MButton::
+~RButton & MButton::
 Send #{Tab}
 Return
 
@@ -56,6 +56,6 @@ For i, bro in browsers {
 Return
 
 ; EXTRAS
-F1::
++F1::
 Reload
 Return
