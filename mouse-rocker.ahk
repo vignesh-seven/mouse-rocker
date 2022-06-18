@@ -5,6 +5,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 browsers := ["ahk_exe firefox.exe", "ahk_exe msedge.exe", "ahk_exe chrome.exe", "ahk_exe brave.exe"]
 
+RButton::RButton
+Return
 
 RButton & LButton::
   ; check for browsers

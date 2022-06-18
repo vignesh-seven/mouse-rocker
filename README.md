@@ -9,7 +9,7 @@ For the situations when you're just watching something on your PC laying back an
 - Browser: Go forward
 - Explorer: Go forward
 #### Hold Middle Button + Scroll:
-- Browser: Cycle Tabs
+- Browser: Cycle between tabs
 #### Right Click + Middle Click:
 - Anywhere: Task View  
 #### Double Click Middle Button:
