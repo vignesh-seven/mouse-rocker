@@ -5,37 +5,40 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 browsers := ["ahk_exe firefox.exe", "ahk_exe msedge.exe", "ahk_exe chrome.exe", "ahk_exe brave.exe"]
 
-;  BACK
-~RButton & LButton::
+
+RButton & LButton::
   ; check for browsers
   For i, bro in browsers {
     If(WinActive(bro)) {
+      ; GO BACK
       Send !{Left}
     }
   }
   ; check for explorer
   If (WinActive("ahk_exe Explorer.EXE")) {
+    ; GO BACK
     Send !{Left}
   }
 Return
 
-; FORWARD (?)
 ~LButton & RButton::
   ; check for browsers
   For i, bro in browsers {
     If(WinActive(bro)) {
+      ; GO FORWARD
       Send !{Right}
     }
   }
   ; check for explorer
   If (WinActive("ahk_exe Explorer.EXE")) {
+    ; GO FORWARD
     Send !{Right}
   }
 Return
 
 
+RButton & MButton::
 ; TASK VIEW
-~RButton & MButton::
 Send #{Tab}
 Return
 
@@ -53,6 +56,33 @@ For i, bro in browsers {
     Send ^{Tab}
   }
 }
+Return
+
+; MButton 2
+~MButton::
+if (A_PriorHotkey <> "~MButton" or A_TimeSincePriorHotkey > 500)
+{
+    KeyWait, MButton
+    return
+}
+For i, bro in browsers {
+  If(WinActive(bro)) {
+    Send ^w
+  }
+}
+return
+
+; ALT TABBB!!!
+MButton & LButton::
+Send !{Tab}
+Return
+
+; change volume
+LButton & WheelUp::
+Send {Volume_Up}
+Return
+LButton & WheelDown::
+Send {Volume_Down}
 Return
 
 ; EXTRAS

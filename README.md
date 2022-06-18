@@ -12,8 +12,13 @@ For the situations when you're just watching something on your PC laying back an
 - Browser: Cycle Tabs
 #### Right Click + Middle Click:
 - Anywhere: Task View  
-
-#### Currently supported browsers:
+#### Double Click Middle Button:
+- Browser: Close active tab
+#### Middle Click + Left Click:
+- Anywhere: Alt + Tab
+#### Left Click + Scroll:
+- Anywhere: Adjust system volume
+#### Works with these browsers:
 - Google Chrome  
 - Microsoft Edge  
 - Mozilla Firefox  
