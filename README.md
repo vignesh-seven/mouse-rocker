@@ -1,6 +1,6 @@
 # Mouse Rocker
 A tool to let you use your PC mainly with your mouse.
-
+For the situations when you're just watching something on your PC laying back and too lazy to reach out to the keyboard.
 ## Features:
 #### Right Click + Left Click:
 - Browser: Go back
@@ -17,5 +17,4 @@ A tool to let you use your PC mainly with your mouse.
 - Google Chrome  
 - Microsoft Edge  
 - Mozilla Firefox  
-## Why?
-For the situations when you're just watching something on your PC laying back and too lazy to reach out to the keyboard.
+- Brave
