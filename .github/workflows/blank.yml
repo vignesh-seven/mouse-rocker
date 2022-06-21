@@ -36,4 +36,4 @@ jobs:
         with:
           files: mouse-rocker.exe
         env:
-          BUILD_ACTION: ${{ GH_PAT }}
+          BUILD_ACTION: ${{ GITHUB.GH_PAT }}
