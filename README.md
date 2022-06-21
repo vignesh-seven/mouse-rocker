@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="" />
+</p>
+
 # Mouse Rocker
 A tool to let you use your PC mainly with your mouse. Use the three buttons on your your mouse to perform some basic shortcuts and web browser navigation on your PC.
 <br>
