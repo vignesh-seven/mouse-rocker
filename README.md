@@ -23,3 +23,5 @@ For the situations when you're just watching something on your PC laying back an
 - Microsoft Edge  
 - Mozilla Firefox  
 - Brave
+
+##### Note: Right click drag won't work while the script is running.
