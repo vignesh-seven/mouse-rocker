@@ -1,6 +1,8 @@
 # Mouse Rocker
-A tool to let you use your PC mainly with your mouse.
-For the situations when you're just watching something on your PC laying back and too lazy to reach out to the keyboard.
+A tool to let you use your PC mainly with your mouse. Use the three buttons on your your mouse to perform some basic shortcuts and web browser navigation on your PC.
+<br>
+<br>
+For those situations when you're just watching something on your PC laying back and too lazy to reach out to the keyboard.
 ## Features:
 #### Right Click + Left Click:
 - Browser: Go back
@@ -24,4 +26,4 @@ For the situations when you're just watching something on your PC laying back an
 - Mozilla Firefox  
 - Brave
 
-##### Note: Right click drag won't work while the script is running.
+##### Note: Right click drag won't work while the script is running. 🫤
