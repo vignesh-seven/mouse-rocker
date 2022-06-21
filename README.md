@@ -1,11 +1,10 @@
 <p align="center">
-  <img src="" />
-</p>
+  <img src="https://raw.githubusercontent.com/vignesh-seven/mouse-rocker/master/mouse-rocker.png" width="128px"/>
+</p>  
 
 # Mouse Rocker
 A tool to let you use your PC mainly with your mouse. Use the three buttons on your your mouse to perform some basic shortcuts and web browser navigation on your PC.
-<br>
-<br>
+
 For those situations when you're just watching something on your PC laying back and too lazy to reach out to the keyboard.
 ## Features:
 #### Right Click + Left Click:
