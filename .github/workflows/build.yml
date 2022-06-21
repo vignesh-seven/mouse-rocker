@@ -2,26 +2,26 @@
 
 name: Build
 
-on: push
+on: 
+  workflow_dispatch:
 
 jobs:
-  Example2:
-    name: Example2
-    runs-on: windows-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+  name: Building
+  runs-on: windows-latest
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v2
 
-      - name: Ahk2Exe
-        uses: nekocodeX/GitHub-Action-Ahk2Exe@main
-        with:
-          in: mouse-rocker.ahk
-          icon: mouse-rocker.ico
+    - name: Ahk2Exe
+      uses: nekocodeX/GitHub-Action-Ahk2Exe@main
+      with:
+        in: mouse-rocker.ahk
+        icon: mouse-rocker.ico
 
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
-        with:
-          files: mouse-rocker.exe
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      if: startsWith(github.ref, 'refs/tags/')
+      with:
+        files: mouse-rocker.exe
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
